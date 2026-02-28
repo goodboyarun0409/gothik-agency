@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ta">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gothik | Digital Marketing & Social Media Agency</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: #080a10;
+            color: #f8fafc;
+            line-height: 1.6;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(8, 10, 16, 0.95);
+            padding: 15px 10%;
+            position: sticky;
+            top: 0;
+            border-bottom: 1px solid #1e293b;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: white;
+            text-decoration: none;
+            letter-spacing: 2px;
+        }
+
+        .logo span {
+            color: #00e6ff;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-left: 25px;
+        }
+
+        nav ul li a {
+            color: #cbd5e1;
+            text-decoration: none;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #00e6ff;
+        }
+
+        section {
+            padding: 80px 10%;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .underline {
+            width: 50px;
+            height: 4px;
+            background: #00e6ff;
+            margin: 0 auto 40px;
+        }
+
+        #home {
+            height: 90vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('https://images.unsplash.com/photo-1557838923-2985c318be48?auto=format&fit=crop&w=1200&q=80');
+            background-size: cover;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            font-weight: 800;
+        }
+
+        .btn {
+            background: #00e6ff;
+            color: #080a10;
+            padding: 12px 35px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: 0.3s;
+            display: inline-block;
+        }
+
+        .btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 20px rgba(0, 230, 255, 0.4);
+        }
+
+        /* Contact Details Section */
+        #contact {
+            background: #0f121a;
+        }
+
+        .contact-flex {
+            display: flex;
+            gap: 40px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .contact-info {
+            flex: 1;
+            min-width: 300px;
+            max-width: 500px;
+        }
+
+        .info-card {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            background: #11141d;
+            padding: 25px;
+            border-radius: 15px;
+            border: 1px solid #1e293b;
+            text-decoration: none;
+            color: white;
+            transition: 0.4s;
+        }
+
+        .info-card:hover {
+            border-color: #00e6ff;
+            background: #161b26;
+            transform: translateX(10px);
+        }
+
+        .info-card i {
+            font-size: 1.8rem;
+            color: #00e6ff;
+            margin-right: 20px;
+            width: 40px;
+            text-align: center;
+        }
+
+        .info-card h4 {
+            font-size: 1.2rem;
+            margin-bottom: 2px;
+        }
+
+        .info-card p {
+            color: #94a3b8;
+            font-size: 0.95rem;
+        }
+
+        .whatsapp-btn {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: #25d366;
+            padding: 15px;
+            border-radius: 50%;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+            z-index: 1000;
+            transition: 0.3s;
+        }
+
+        .whatsapp-btn:hover {
+            transform: scale(1.1);
+        }
+
+        .whatsapp-btn img {
+            width: 30px;
+            height: 30px;
+            display: block;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            background: #080a10;
+            color: #64748b;
+            border-top: 1px solid #1e293b;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <a href="#home" class="logo"><span>G</span>OTHIK</a>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-text">
+            <h1>Gothik Digital Agency</h1>
+            <p>Maximizing Your Digital Presence & Brand Growth.</p><br>
+            <a href="#contact" class="btn">Get Started Now</a>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Get In Touch</h2>
+        <div class="underline"></div>
+        <div class="contact-flex">
+
+            <div class="contact-info">
+                <a href="tel:+918610401668" class="info-card">
+                    <i class="fas fa-phone-alt"></i>
+                    <div>
+                        <h4>Phone</h4>
+                        <p>+91 86104 01668</p>
+                    </div>
+                </a>
+
+                <a href="mailto:gothik@gmail.com" class="info-card">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h4>Email</h4>
+                        <p>gothik@gmail.com</p>
+                    </div>
+                </a>
+
+                <a href="https://instagram.com/gothik" target="_blank" class="info-card">
+                    <i class="fab fa-instagram"></i>
+                    <div>
+                        <h4>Instagram</h4>
+                        <p>@gothik</p>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Gothik Agency. All Rights Reserved.</p>
+    </footer>
+
+    <a href="https://wa.me/918610401668" class="whatsapp-btn" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+    </a>
+
+</body>
+
+</html>
